@@ -16,33 +16,112 @@
 }
 
 .left-section {
-    padding: 2rem 2rem;
-    position: absolute;
-    width: 308px;
-    height: 1955px;
-    left: 135px;
-    top: 32px;
-    background-color: #00204A;
-    border-radius: 0px;
+    grid-column: span 2;
+    height: 100%;
+    background-color: #999999;
 }
 
-.profile-image {
-    position: absolute;
-    width: 244px;
-    height: 122px;
-    left: 167px;
-    top: 64px;
-    background: url(/projects/nsbgabriel.github.io/pp.jpg);
-    border-radius: 0px;
-}
+
 
 .right-section {
-    padding: 2rem 2rem;
-    position: absolute;
-    width: 771px;
-    height: 1955px;
-    left: 443px;
-    top: 32px;
-    background: #4B6982;
+    grid-column: span 5;
+    height: 100%;
+    background-color: #424a50;
     border-radius: 0px 60px 0px 0px;
+}
+
+.left-section-contents {
+    padding: 2rem 2rem;
+}
+
+.profile {
+    width: 100%;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.profile .profile-image {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.name, .profession {
+    color: #D6d8df;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* contact-info */
+
+.left-title {
+    color: #eeeeee;
+    font-size: 20px;
+}
+
+.contact-info ul {
+    padding-top: 1.5rem;
+}
+
+.contact-info ul li, .references ul li {
+    padding: .4rem 0;
+    color: #eeeeee;
+}
+
+.contact-info ul li i, .references ul li i {
+    padding-right: 1rem;
+    font-size: 18px;
+    color: #eeeeee;
+}
+
+.skills {
+    padding-top: 1.5rem;
+}
+
+.skills ul li p {
+    padding: .4rem 0;
+    color: #eeeeee;
+}
+
+.right-section-contents {
+    padding: 2rem 2rem;
+}
+
+.right-title {
+    font-size: 40px;
+    color: #eeeeee;
+    
+}
+
+.gap {
+    padding-bottom: 2rem;
+}
+
+.about-me-contents {
+    font-size: 18px;
+    color: #eeeeee;
+}
+
+.experience-contents, .education-contents, .awards-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 2rem;
+    color: #f1f8fd;
+}
+
+.exp-company-name, .education-school-name, .awards-company-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.exp-time-period, .education-time-period, .awards-time-period {
+    font-size: 18px;
+}
+
+.exp-position, .education-subject, .awards-name {
+    font-size: 25px;
+}
+
+.exp-desc, .education-desc, .awards-desc {
+    font-size: 16px;
+    padding-left: 5px;
 }
